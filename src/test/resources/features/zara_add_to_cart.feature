@@ -15,3 +15,4 @@ Feature: Zara product search and cart operations
     And the user increases the quantity to 2
     When the user removes the product from the cart
     Then the cart should be empty
+
