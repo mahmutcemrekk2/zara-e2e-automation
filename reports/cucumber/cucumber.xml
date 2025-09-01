@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="29.27" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Zara product search and cart operations" name="Search products from Excel and validate cart functionality" time="29.1">
+<system-out><![CDATA[
+Given the user launches Zara website........................................passed
+And the user logs in with valid credentials.................................passed
+When the user navigates to Men > View All...................................passed
+And the user enters the first keyword from Excel into the search box........passed
+And the user clears the search box..........................................passed
+And the user enters the second keyword from Excel into the search box.......passed
+And the user selects a random product from the search results...............passed
+Then the product information and price are saved into a text file...........passed
+When the user adds the product to the cart..................................passed
+Then the product price in the cart should match the product page price......passed
+And the user increases the quantity to 2....................................passed
+When the user removes the product from the cart.............................passed
+Then the cart should be empty...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
