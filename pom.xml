@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- JDK: 17 öneriyorum; 21 de uyumlu. -->
+  
         <maven.compiler.release>17</maven.compiler.release>
 
         <cucumber.version>7.15.0</cucumber.version>
@@ -26,7 +26,7 @@
     </properties>
 
     <dependencies>
-        <!-- Cucumber (test scope) -->
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -46,7 +46,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Selenium + WDM (UI tarafı main scope) -->
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -58,7 +58,7 @@
             <version>5.9.2</version>
         </dependency>
 
-        <!-- Log4j2 -->
+ 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -75,33 +75,33 @@
             <version>${log4j.version}</version>
         </dependency>
 
-        <!-- REST Assured (MAIN scope: ApiBase main altında) -->
+   
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${restassured.version}</version>
         </dependency>
-        <!-- (Opsiyonel ama faydalı) Ayrık json-path modülü -->
+  
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-path</artifactId>
             <version>${restassured.version}</version>
         </dependency>
-        <!-- (Opsiyonel) Jackson; bazı mapping senaryolarında gerekebilir -->
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
 
-        <!-- org.json: ApiBase JSONObject/JSONArray -->
+    
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>${orgjson.version}</version>
         </dependency>
 
-        <!-- Diğer yardımcılar -->
+   
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -118,7 +118,7 @@
             <version>${poi.version}</version>
         </dependency>
 
-        <!-- Hamcrest (test) -->
+
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
@@ -129,7 +129,7 @@
 
     <build>
         <plugins>
-            <!-- Java derleyici -->
+       
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -139,7 +139,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Test runner -->
+        
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
