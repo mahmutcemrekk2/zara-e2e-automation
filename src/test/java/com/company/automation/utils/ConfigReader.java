@@ -13,11 +13,11 @@ public class ConfigReader {
     }
 
     private static void load() {
-        // 2) Classpath üzerinden dene (IDE/Surefire farkına dayanıklı)
+        // Classpath üzerinden 
         if (loadFromClasspath("config/test-user.properties")) return;
         if (loadFromClasspath("config/test-users.properties")) return;
 
-        // 3) Son çare: eski davranış (relative path) – istersen kaldırabilirsin
+        // eski davranış (relative path)
         if (loadFromFile("src/test/resources/config/test-user.properties")) return;
         if (loadFromFile("src/test/resources/config/test-users.properties")) return;
 
